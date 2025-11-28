@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Fake Form Filler",
+  "version": "1.0",
+  "description": "Preenche formulários automaticamente com dados falsos usando Gemini AI.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gerar Dados Falsos"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
