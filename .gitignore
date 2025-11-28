@@ -1,0 +1,66 @@
+# =========================
+# PYTHON / FLASK
+# =========================
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.cache/
+*.log
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Database / sqlite (se usar)
+*.sqlite3
+*.db
+
+# IDE configs
+.vscode/
+.idea/
+*.iml
+
+# Mac / Linux system
+.DS_Store
+Thumbs.db
+
+# =========================
+# CHROME EXTENSION
+# =========================
+
+# Build output
+build/
+dist/
+node_modules/
+
+# Chrome extension temporary files
+*.pem
+
+# Ignorar zip da extensão
+*.zip
+
+# =========================
+# FRONTEND (se tiver)
+# =========================
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
