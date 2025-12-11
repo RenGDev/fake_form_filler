@@ -41,8 +41,6 @@ Jinja2==3.1.6
 jmespath==1.0.1
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
-louis==3.33.0
-lutris==0.5.19
 lxml==5.3.2
 MarkupSafe==3.0.3
 moddb==0.12.0
