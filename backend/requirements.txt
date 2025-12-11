@@ -106,7 +106,6 @@ rpds-py==0.25.0
 rpm==4.20.1
 rsa==4.9.1
 s3transfer==0.14.0
-selinux @ file:///builddir/build/BUILD/libselinux-3.8-build/libselinux-3.8/src
 sentry-sdk==2.21.0
 sepolicy @ file:///builddir/build/BUILD/policycoreutils-3.8-build/selinux-3.8/python/sepolicy
 setools==4.5.1
