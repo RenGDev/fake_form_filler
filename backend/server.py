@@ -18,6 +18,7 @@ def generate():
     data = request.json
     fields = data.get("fields", [])
     html_context = data.get("html", "")
+    details = data.get("details", "")
 
     prompt = f"""
         Você é um gerador de dados de teste altamente contextual.
@@ -46,6 +47,9 @@ def generate():
         - Sem texto fora do JSON.
         - Sem ```json.
         - Cada chave deve ser exatamente igual ao "name" do campo.
+
+        3. CASO TENHA ESPECIFICAÇÕES SIGA ESTE COMANDO
+        {details}
         """
 
     response = model.generate_content(prompt)
