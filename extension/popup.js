@@ -13,19 +13,22 @@ document.getElementById("generate").addEventListener("click", async () => {
 
   const scan = await sendToContent({ action: "scanForm" });
 
-  console.log("SCAN:", scan);
+  const details = document.getElementById("details")
+
+  const detailsText = details.value
 
   if (!scan) {
     document.getElementById("result").innerText = "ERRO: scanForm retornou vazio.";
     return;
   }
 
-  const response = await fetch("http://localhost:5000/generate", {
+  const response = await fetch("https://fake-form-filler.onrender.com/generate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       fields: scan.fields,
-      html: scan.html
+      html: scan.html,
+      details: detailsText
     })
   });
 
